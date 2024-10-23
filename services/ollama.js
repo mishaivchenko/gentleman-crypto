@@ -20,7 +20,7 @@ async function analyzeNews(symbol, news, indicators) {
     const modelPort = process.env.MODEL_PORT || 11434;
 
     try {
-        const response = await axios.post('http://${modelHost}:${modelPort}/api/generate', {
+        const response = await axios.post(`http://${modelHost}:${modelPort}/api/generate`, {
             model: "llama3.2",
             prompt: prompt,
             temperature: 0.7,
