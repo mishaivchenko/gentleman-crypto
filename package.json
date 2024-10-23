@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
@@ -17,11 +18,12 @@
     "cron": "^3.1.7",
     "crypto": "^1.0.1",
     "dotenv": "^16.4.5",
-    "node-telegram-bot-api": "^0.63.0",
+    "node-telegram-bot-api": "^0.66.0",
     "openai": "^4.68.0",
     "pdfkit": "^0.15.0",
     "technicalindicators": "^3.1.0",
     "twitter-api-sdk": "^1.2.1",
-    "twitter-v2": "^1.1.0"
+    "twitter-v2": "^1.1.0",
+    "uuid": "^10.0.0"
   }
 }

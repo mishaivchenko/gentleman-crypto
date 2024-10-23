@@ -46,8 +46,8 @@ async function runAnalysis(chatId) {
             await sendBriefReportToTelegram(asset.symbol, analysis, chatId);
 
             // Формируем блок для каждой монеты
-            fullReport += `🔹 *${asset.symbol} News*:\n`;
-            fullReport += `${analysis}\n\n`;  // Добавляем анализ новостей для монеты
+            //fullReport += `🔹 *${asset.symbol} News*:\n`;
+            //fullReport += `${analysis}\n\n`;  // Добавляем анализ новостей для монеты
 
             await sendChartToTelegram(chatId, asset.symbol, data, indicators, news);
         }

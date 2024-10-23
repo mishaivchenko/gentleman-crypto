@@ -1,0 +1,19 @@
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+    env_file: .env
+    networks:
+      - app-network
+  llama:
+    image: llama-model:latest # Пример, если модель будет работать в отдельном контейнере
+    expose:
+      - "8000"
+    networks:
+      - app-network
+networks:
+  app-network:

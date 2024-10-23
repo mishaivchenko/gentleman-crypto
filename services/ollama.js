@@ -16,9 +16,11 @@ async function analyzeNews(symbol, news, indicators) {
     Provide a brief summary, focusing on the correlation between the news and indicators. Use concise, professional language. Add emojis for fun.
   `;
 
+    const modelHost = process.env.MODEL_HOST || 'host.docker.internal';  // Подключение к хосту
+    const modelPort = process.env.MODEL_PORT || 11434;
 
     try {
-        const response = await axios.post('http://localhost:11434/api/generate', {
+        const response = await axios.post('http://${modelHost}:${modelPort}/api/generate', {
             model: "llama3.2",
             prompt: prompt,
             temperature: 0.7,
