@@ -4,7 +4,7 @@ const axios = require('axios');
 async function analyzeNews(symbol, news) {
     const apiKey = process.env.OPENAI_API_KEY; // Убедись, что API-ключ правильный
 
-    // Формируем подробный промпт для анализа всех данных
+    /// Формируем подробный промпт для анализа всех данных
     const prompt = `
     Ты — финансовый аналитик. Тебе даны новости о криптовалюте ${symbol}. 
     Вот список новостей:
