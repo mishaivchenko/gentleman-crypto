@@ -29,12 +29,6 @@ RUN npm cache clean --force
 # Копируем исходный код
 COPY . .
 
-# Указываем переменные окружения (опционально, если используете ENV в Dockerfile)
-# ENV TELEGRAM_API_KEY=your_telegram_key
-# ENV BINANCE_API_KEY=your_binance_key
-# ENV BINANCE_SECRET_KEY=your_binance_secret
-# ENV NEWS_API_KEY=your_newsapi_key
-
 # Порт, который будет использовать контейнер
 EXPOSE 3000
 
