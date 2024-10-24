@@ -3,7 +3,7 @@ const axios = require('axios');
 async function getCombinedNews(symbol) {
     try {
         // Получаем новости с обоих источников
-        const newsAPIResults =  await getNewsFromNewsAPI(symbol);
+        const newsAPIResults =  []; //await getNewsFromNewsAPI(symbol);
         const cryptoPanicResults = await getNewsFromCryptoPanic(symbol);
         //const twitterNews = await searchTwitterNews(symbol);
 
