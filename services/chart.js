@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { ChartJSNodeCanvas } = require('chartjs-node-canvas');
-const width = 800; // ширина холста
+const width = 800; // ширин а холста
 const height = 600; // высота холста
 const chartCallback = (ChartJS) => {
     // Здесь можно настроить глобальные параметры графика, например, плагины
