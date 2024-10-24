@@ -21,7 +21,7 @@ async function runAnalysis(chatId) {
     try {
         const assets = await getAssets();
 
-        let fullReport = `📊 *Daily Crypto News Analysis* 📊\n\n`;
+        let fullReport = `📊 *Daily Crypto News Analysis test* 📊\n\n`;
 
         for (let asset of assets) {
             const news = await getCombinedNews(asset.symbol);
